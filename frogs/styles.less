@@ -1,0 +1,41 @@
+.frog-space {
+	position:relative;
+  height: 100px;
+  padding:10px 0px 10px 10px;
+  .border-radius(20px);
+
+  .blue {
+  	background-image: url("../img/blueFrog.png");
+  }
+
+  .red {
+    background-image: url("../img/redFrog.png");
+  }
+
+  .frog {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    opacity: 0.7;
+    
+    position: absolute;
+    .transition(.2s ease-in-out left);
+
+    &:hover {
+      cursor: pointer;
+      opacity:1;
+    }
+  }
+}
+
+.froginput {
+	width: 40px;
+	height: 30px;
+	font-size: 18px;
+}
+
+/*
+[ng-controller = frogController] .pagination {
+  margin-bottom:0px
+}
+*/
